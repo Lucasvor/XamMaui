@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAUI TÓPICOS</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <meta property="og:title" content="MAUI TÓPICOS">
+    <meta property="og:description" content="TÓPICOS">
+    <meta property="og:image" content="https://Lucasvor.github.io/XamMaui/logo.png">
+    <meta property="og:url" content="https://Lucasvor.github.io/XamMaui/">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #80420e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        header img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+        header h2 {
+            text-align: left;
+            margin: 0;
+            padding-left: 10px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 80px; /* Ajustar a margem superior para dar espaço ao cabeçalho fixo */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        .image-block {
+            border: 1px solid #80420e;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .image-block img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .caption {
+            margin-top: 0px;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+            background-color: #e0e0e0; /* Fundo cinza clarinho */
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h2>MAUI TÓPICOS</h2>
+    </header>
+    <div class="container">
+        <div class="gallery">
+            <div class="image-block" onclick="window.open('https://www.bol.uol.com.br/', '_blank');">
+                <img src="youtube.png" alt="Image 1">
+                <div class="caption">NOME CURTO DO TÓPICO</div>
+            </div>
+            
+           <div class="image-block" onclick="window.open('https://www.bol.uol.com.br/', '_blank');">
+                <img src="youtube.png" alt="Image 1">
+                <div class="caption">NOME CURTO DO TÓPICO</div>
+            </div>
+			
+			 <div class="image-block" onclick="window.open('https://www.bol.uol.com.br/', '_blank');">
+                <img src="youtube.png" alt="Image 2">
+                <div class="caption">NOME CURTO DO TÓPICO</div>
+            </div>
+			
+			 <div class="image-block" onclick="window.open('https://www.bol.uol.com.br/', '_blank');">
+                <img src="youtube.png" alt="Image 3">
+                <div class="caption">NOME CURTO DO TÓPICO</div>
+            </div>
+            <!-- Adicione mais blocos de imagens conforme necessário -->
+        </div>
+    </div>
+</body>
+</html>
